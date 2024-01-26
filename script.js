@@ -21,14 +21,13 @@ function Gameboard() {
         const selectedCell = board[row][column];
 
         // check to see if the cell is empty, otherwise the move is invalid
-        if (selectedCell.getValue !== 0) return;
+        if (selectedCell.getValue() !== 0) return;
         selectedCell.addMark(player);
     }
 
     //print the board in the console for debugging
     const printBoard = () => {
-        const updatedBoard = board.map((row) => row.map((cell) => cell.getValue))
-        console.log(updatedBoard);
+        board.forEach(row => console.log(row.map(cell => cell.getValue()).join(' ')));
     }
 
     return {getBoard, markCell, printBoard};
@@ -51,3 +50,8 @@ function Cell() {
     };
 }
 
+const game = Gameboard();
+
+game.markCell(0,0,"x");
+
+game.printBoard();
