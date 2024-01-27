@@ -4,10 +4,6 @@
 
 This project serves as a practice exercise for implementing a Tic-Tac-Toe game using factory functions. The logic is divided into three different factory functions: GameBoard, Cell, and GameController.
 
-## Getting Started
-
-If you're unsure how to start this project, you can draw inspiration from a Connect Four console implementation. Check out this example: [Connect Four Console](https://replit.com/@40percentzinc/ConnectFourConsole#script.js).
-
 ## Problem and Solution Sections
 
 ### Problem: How do I mark the players' moves in the console?
